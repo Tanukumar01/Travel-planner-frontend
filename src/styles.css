@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+    --color-shell-950: #0b1220;
+    --color-shell-900: #0f1a2f;
+    --color-shell-850: #13213a;
+    --color-shell-800: #16263f;
+    --color-panel: rgba(25, 36, 57, 0.82);
+    --color-panel-soft: rgba(32, 45, 68, 0.72);
+    --color-line: rgba(145, 166, 193, 0.16);
+    --color-mint: #35c7bb;
+    --color-mint-soft: #93fff4;
+    --color-ember: #ff8a1d;
+    --color-ember-deep: #ff650f;
+}
+
+html {
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+    background:
+        linear-gradient(104deg, transparent 0 73%, rgba(132, 154, 182, 0.18) 73% 78%, rgba(180, 197, 217, 0.25) 78% 100%),
+        radial-gradient(circle at 14% 24%, rgba(37, 88, 113, 0.1), transparent 30%),
+        linear-gradient(135deg, #10192b 0%, #121d31 46%, #0a1220 100%);
+    color: #f2eadf;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+#app {
+    min-height: 100vh;
+}
